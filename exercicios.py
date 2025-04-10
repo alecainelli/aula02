@@ -42,13 +42,38 @@
 #print("A média é:", media)
 
 #8
-base = float(input("Digite a base: "))
-expoente = float(input("Digite o expoente: "))
+#base = float(input("Digite a base: "))
+#expoente = float(input("Digite o expoente: "))
 #base = 2.0  # Exemplo de entrada
 #expoente = 3.0  # Exemplo de entrada
-potencia = base ** expoente
-print("O resultado da potência é:", potencia)
+#potencia = base ** expoente
+#print("O resultado da potência é:", potencia)
 
 #9
+#celsius = float(input("Digite a temperatura em Celsius: "))
+#celsius = 30.0  # Exemplo de entrada
+#fahrenheit = (celsius * 9/5) + 32
+#print(f"{celsius}°C é igual a {fahrenheit}°F")
 
 #10
+#raio = float(input("Digite o raio: "))
+#area = 3.14159  * (raio ** 2)
+#print("A área do c´írculo é: ", area)
+
+import math
+
+def calcular_area_circulo(raio):
+  """Calcula a área de um círculo dado o seu raio."""
+  if raio < 0:
+    return "O raio não pode ser negativo."
+  area = math.pi * (raio ** 2)
+  return area
+
+# Exemplo de uso:
+raio_circulo = float(input("Digite o raio do círculo: "))
+area_calculada = calcular_area_circulo(raio_circulo)
+
+if isinstance(area_calculada, str):
+  print(area_calculada)
+else:
+  print(f"A área do círculo com raio {raio_circulo} é: {area_calculada:.2f}")
